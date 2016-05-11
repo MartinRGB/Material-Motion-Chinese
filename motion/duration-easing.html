@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  <head>
+    <meta charset="utf-8">
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon-v1.ico">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>Duration and easing - Motion - Google design guidelines</title>
+    <meta itemprop="name" content="Duration and easing - Motion - Google design guidelines"/>
+    <meta itemprop="image" content="https://material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Duration and easing - Motion - Google design guidelines" />
+    <meta property="og:image" content="https://material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Duration and easing - Motion" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Duration and easing</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Motion</Attribute>
+      <Attribute name="section_slug">motion</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="site-material_ext_publish section-motion noninitial-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+        <!-- Google Tag Manager -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHRPF8"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NHRPF8');</script>
+      <!-- End Google Tag Manager -->
+        <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">Motion</span>
+      <span class="chapter-title"><span class="title-separator">–</span> Duration and easing</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+<form id="search-form" action="/design/spec/search.html" method="GET">
+  <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+    <button class="search-button"><i class="material-icons">search</i></button>
+    <button class="search-close-button"><i class="material-icons">close</i></button>
+    <input name="q" type="text" id="search-input" autocomplete="off">
+    <label for="search-input">Search</label>
+  </div>
+</form>
+
+
+
+
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">Motion
+                </dt>
+        <dd>
+                    <a class="" href="material-motion.html">Material motion
+                    </a>
+                    <a class="nav_selected" href="duration-easing.html">持续时间和缓动
+                    </a>
+                    <a class="" href="movement.html">元素的运动
+                    </a>
+                    <a class="" href="transforming-material.html">Material 的变形
+                    </a>
+                    <a class="" href="choreography.html">动画的组织
+                    </a>
+                    <a class="" href="creative-customization.html">自定义创意动画
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <ul>
+                  <li>
+            <a href="javascript:void(0);" onclick="try{userfeedback.api.startFeedback({'productId': '1027542', 'bucket': 'material_spec', 'locale': 'en', 'allowNonLoggedInFeedback': true});return false;}catch(e){}" class="qp-ui-side-nav-dismiss">Site feedback</a>
+          </li>
+                <li>
+          <a href="../../../intl/en/policies/privacy/index.html">Privacy</a>
+        </li>
+        <li>
+          <a href="../../../intl/en/policies/terms/index.html">Terms</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">Duration and easing
+          </h1>
+    <div class="chapter-content">
+
+        <div class="chapter-intro">
+            <p>Material in motion is responsive and natural. Use these easing curves and duration patterns to create smooth and consistent motion.</p>
+
+
+
+    </div>
+
+        <nav class="chapter-toc">
+      <h1>Contents</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-speed">Speed
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-dynamic-durations">Dynamic durations
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-common-durations">Common durations
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-natural-easing-curves">Natural easing curves
+                </a></li>
+              </ul>
+    </nav>
+
+    <div class="article-list">
+                        <div id="duration-easing-speed" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Speed
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>When elements move between positions or states, the movement should be fast enough that it doesn't cause waiting, but slow enough that the transition can be understood. Keep transitions short as users will see them frequently.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01eGJDZEVBUjZqVUU" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01S3dRNGEtaVRHbnM/QuickResponse_01_QuickDo_v2.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01eGJDZEVBUjZqVUU/QuickResponse_01_QuickDo_v2.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>Animate quickly so that the user doesn’t have to wait for the animation to finish.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01THVvNjB1eFYyVk0" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01SlFzYzNJdG5MTXM/QuickResponse_01_QuickDont_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01THVvNjB1eFYyVk0/QuickResponse_01_QuickDont_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Don’t animate slowly as it creates unnecessary lag.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="duration-easing-dynamic-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Dynamic durations
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>Rather than using a single duration for all animations, adjust each duration to accommodate the distance travelled, an element's velocity, and surface changes.</p><p><a href="movement.html#movement-movement-in-out-of-screen-bounds">Objects leaving the screen</a> may have shorter durations, as they require less attention.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01WHpEd1JVWVBvUm8" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01RmIzcDNDd2tnak0/DynamicDurations_01_LongDistance-v2.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01WHpEd1JVWVBvUm8/DynamicDurations_01_LongDistance-v2.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Use longer durations when objects need to travel large distances or have dramatic changes in surface area.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01T3RNOFhadU96OTQ" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01bEdqaWFncGo2anM/DynamicDurations_02_ShortDistance-v2.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01T3RNOFhadU96OTQ/DynamicDurations_02_ShortDistance-v2.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Use shorter durations when objects travel short distances or have minor changes in surface area, so that the movement doesn't appear too slow.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="duration-easing-common-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Common durations
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>Mobile </h4><p>Transitions on mobile typically occur over 300ms, within this margin of variance: </p><ul><li>Large, complex, full-screen transitions may have longer durations, occurring over 375ms</li><li>Objects entering the screen occur over 225ms</li><li>Objects leaving the screen occur over 195ms</li></ul><p>Transitions that exceed 400ms may feel too slow.</p><h4>Larger screens</h4><p>Objects travelling longer distances on larger screens have higher peak velocities than those going shorter distances over the same time period. Larger screens should have longer durations so that movements aren't too fast. </p><h4>Tablets</h4><p>Durations on tablet should be about 30% longer than on mobile. For example, a 300ms mobile duration would increase to 390ms on tablet.</p><h4>Wearables</h4><p>Durations on wearables should be about 30% shorter than those on mobile. For example, a 300ms mobile duration would be 210ms on wearables.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01MS1KNXRLQ0hZUzQ" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01cjZHeUxGdHRIc2s/CommonDurations_01_3Devices_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01MS1KNXRLQ0hZUzQ/CommonDurations_01_3Devices_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Because material must move greater distances on larger devices, transitions may have slightly slower durations than on smaller devices.</p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <h4>Desktop</h4><p>Desktop animations should be faster and simpler than their mobile counterparts. These animations should last 150ms to 200ms.</p><p>Because desktop transitions may be less noticeable, they should be immediately responsive and faster than their mobile counterparts.</p><p>Complex web transitions often result in dropped frames (unless they are built for GPU acceleration). Shorter durations will make these less noticeable because the animation completes faster.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01cC1JcTg1aElUYTQ" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01aURzOHdJNVkwUlE/CommonDurations_02_Desktop_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01cC1JcTg1aElUYTQ/CommonDurations_02_Desktop_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Transitions appear much faster on desktop. </p>
+        </figcaption>
+              </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="duration-easing-natural-easing-curves" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Natural easing curves
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>These natural easing curves affect an object’s speed, opacity, and scale.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>Acceleration and deceleration changes should be smooth across the duration of an animation so that movement doesn't appear mechanical.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01U1Bwb0RRVW5rVFE" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01Nmh2YUJrLXRIQ00/NaturalEasing_01_CurveNoCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01U1Bwb0RRVW5rVFE/NaturalEasing_01_CurveNoCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+    <p>Motion appears more natural and delightful when acceleration and deceleration occur asymmetrically. </p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01VXpUY3h6NHBtbXc" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01QmRrZkxRMElCenM/NaturalEasing_00_AsymetricCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01VXpUY3h6NHBtbXc/NaturalEasing_00_AsymetricCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>Easing curves</h3>
+        <div class="module-body">
+      <p>Easing curves may be named differently depending on the platform or software used. These guidelines will refer to them as standard, deceleration, acceleration, and sharp curves.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>Standard curve</h3>
+    <div class="module-body">
+    <p>This is the most common easing curve. Objects quickly accelerate and slowly decelerate between on-screen locations. It applies to growing and shrinking material, among other property changes.</p><p>See more in <a href="movement.html#movement-movement-within-screen-bounds">Movement within screen bounds</a>.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01LXZKZ0NUeVRrdzg" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01blBnODdnZnZuVE0/NaturalEasing_02_StandardCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01LXZKZ0NUeVRrdzg/NaturalEasing_02_StandardCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c29"><tbody><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>FastOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>[[CAMediaTimingFunction alloc] initWithControlPoints:0.4f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>cubic-bezier(0.4, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 40%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>Deceleration curve (“Easing out”)</h3>
+    <div class="module-body">
+    <p>Objects enter the screen at full velocity from off-screen and slowly decelerate to a resting point. </p><p>During deceleration, objects may scale up either in size (to 100%) or opacity (to 100%). In some cases, when objects enter the screen at 0% opacity, they may slightly shrink from a larger size upon entry.</p><p>See more in <a href="movement.html#movement-movement-in-out-of-screen-bounds">Movement in and out of screen bounds</a>.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01cEVUck1yWENMRzQ" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01MTRaLVVwVmNad3M/NaturalEasing_03_DecelerationCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01cEVUck1yWENMRzQ/NaturalEasing_03_DecelerationCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c29"><tbody><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>LinearOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span> [[CAMediaTimingFunction alloc] initWithControlPoints:0.0f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>cubic-bezier(0.0, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 0%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>Acceleration curve (“Easing in”)</h3>
+    <div class="module-body">
+    <p>Objects leave the screen at full velocity. They do not decelerate when off-screen. </p><p>They accelerate at the beginning of the animation and may scale down in either size (to 0%) or opacity (to 0%). In some cases, when objects leave the screen at 0% opacity, they may also slightly scale up or down in size. </p><p>See more in <a href="movement.html#movement-movement-in-out-of-screen-bounds">Movement in and out of screen bounds</a>.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01TndGaDBxRTRpOW8" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01U1lNVGFiV0plWHc/NaturalEasing_04_AccelerationCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01TndGaDBxRTRpOW8/NaturalEasing_04_AccelerationCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c29"><tbody><tr class="c4"><td class="c26" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c26" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>FastOutLinearInInterpolator</span></p></td></tr><tr class="c4"><td class="c26" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>[CAMediaTimingFunction alloc] initWithControlPoints:0.4f:0.0f:1.0f:1.0f]<br/></span></p></td></tr><tr class="c4"><td class="c26" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>cubic-bezier(0.4, 0.0, 1, 1);<br/></span></p></td></tr><tr class="c4"><td class="c26" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 40%<br/>Incoming Velocity: 0%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+      <h3>Sharp curve<br/></h3>
+    <div class="module-body">
+    <p>The sharp curve is used by objects that may return to the screen at any time. </p><p>Objects may quickly accelerate from a starting point on-screen, then quickly decelerate in a symmetrical curve to a resting point immediately off-screen. The deceleration is faster than the standard curve since it doesn't follow an exact path to the off-screen point. Objects may return from that point at any time.</p><p>See more in <a href="movement.html#movement-movement-in-out-of-screen-bounds">Movement in and out of screen bounds</a>.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01aHVDZFVTSy1LLW8" crossorigin="anonymous" preload="metadata" loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01d2xfcmNhRXl0ck0/NaturalEasing_05_SharpCurve_v1.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01aHVDZFVTSy1LLW8/NaturalEasing_05_SharpCurve_v1.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleE1">
+    <div class="module-body">
+
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c29"><tbody><tr class="c4"><td class="c1" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c1" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>-</span></p></td></tr><tr class="c4"><td class="c1" colspan="1" rowspan="1"><p><span>iOS </span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>-</span></p></td></tr><tr class="c4"><td class="c1" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>cubic-bezier(0.4, 0.0, 0.6, 1);</span></p></td></tr><tr class="c4"><td class="c1" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c1" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 40%<br/>Incoming Velocity: 40%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                      </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-motion color-purple">&nbsp;</div>
+    <div class="footer-grid-L section-motion color-purple">
+            <a class="footer-text" href="material-motion.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>
+                      Material motion
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-motion color-purple">&nbsp;</div>
+    <div class="footer-grid-R section-motion color-purple">
+            <a class="footer-text" href="movement.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>
+                      元素的运动
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
+    <script src="../static/js/main.js"></script>
+              <script src="https://www.gstatic.com/feedback/api.js"></script>
+
+  </body>
+
+</html>

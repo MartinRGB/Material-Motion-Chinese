@@ -1,0 +1,164 @@
+/*------ print color pallete backgrounds -------*/
+@media print and (color) {
+   div.color-palette{
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+
+@media print{ 
+	nav { display: none; }
+	#side-nav { display: none; }
+	footer { display: none; }
+	.meta-buttons { display:none !important; }
+
+	header{
+		padding:0 !important;
+		height: 64px !important;
+		position: relative !important;
+		top: auto !important;
+		margin-bottom: 0 !important;
+	}
+
+	.header-wrapper{
+		padding-left: 0;
+
+	}
+	
+  /*------ first page in a section, has the peekaboo -------*/
+	
+	header.qp-ui-peekaboo:not(.qp-ui-peekaboo-active){
+		height: 80px !important;
+		border-bottom: 2px solid;
+	}	
+	
+	.header-wrapper.qp-ui-peekaboo.qp-ui-peekaboo-active{
+		height: auto;
+		position: relative;
+		left: 0;
+	}
+
+
+  /*------ every page except the first page in a section -------*/	
+	.noninitial-chapter{
+		padding-top: 10px;
+	}	
+	
+	.noninitial-chapter header {
+		padding-top: 0;
+		padding-left: 0;
+		position: relative;
+		height: auto;
+		top: auto;
+	}
+
+	.noninitial-chapter header .header-wrapper {
+		position: relative;
+	}	
+	
+	.noninitial-chapter .header-wrapper{
+		left: 0;
+	}
+	/*----------------------------------------------------------*/
+
+
+	#grid-cont{
+		padding-left: 0;
+		padding-top: 20px;
+	}
+
+	#grid-cont section.grid_outer {
+		width: 100%;
+	}	
+
+	#grid-cont .chapter{
+		padding-top: 0px;
+	}
+
+	.chapter .chapter-intro{
+		width: 100%;
+		padding-right: 0;
+	}
+	
+	.moduleA1, .moduleA2, .moduleB1, .moduleC1, .moduleD1, .moduleE1, .moduleF1{
+		width: 100%;
+	}
+
+
+	.modulettes{
+		width: 100%;
+	}	
+	
+	/* ------- 3 col display image, image, image ------- */	
+	section.moduleC1 .figure-group{
+		width: 100%;
+	}
+	
+	section.moduleC1 .figure-group .figure-row figure {
+		width: 31%;
+		margin-left: 10px;
+	}	
+
+	
+	section.moduleC1 .figure-group .figure-row figure figcaption{
+		width: 100%;
+	}
+
+	/* ------- 3 col display: text, image, image ------- */
+	.moduleD1 .module-body{
+		width: 31%;
+	}
+
+	.moduleD1 div.figure-group {
+		width: 62%;
+	}	
+
+	.moduleD1 div.figure-group .figure-row figure {
+		width: 45%;
+	}
+
+	.moduleD1 div.figure-group .figure-row figure figcaption {
+		width: 100%;
+	}
+
+	/* ------- 2 col display: text, image ------- */
+	.moduleE1 .module-body{
+		width: 31%;
+	}
+
+	.moduleE1 .module-body .modulettes{
+		width: 100%;
+	}
+
+	.moduleE1 .figure-group {
+		width: 62%;
+	}
+
+	.moduleE1 .figure-group .figure-row figure {
+		width: 100%;
+	}
+
+	/* ----- 1 col display: image ------*/
+	.moduleF1 .figure-group{
+		width: 100%;
+	}
+
+	.moduleF1 .figure-group .figure-row  {
+		width: 100%;
+	}
+
+	.moduleF1 .figure-group .figure-row figure {
+		width: 100%;
+	}
+
+	/* ------ color pallette ------*/
+	.color-palette{
+		width: 100% !important;
+	}
+
+	.color-palette .color-group, .color-palette .color-group:last-child{
+		width: 29% !important;
+	}
+
+
+}

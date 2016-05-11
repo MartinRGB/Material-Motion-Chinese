@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html class="qp-ui" data-qp-ui="{
+  'Futurizr': {
+    'hasTouch': 'touch'
+  }
+}">
+  <head>
+    <meta charset="utf-8">
+    <link href="../static/css/main.css" rel="stylesheet" />
+    <link href="../static/css/print.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon-v1.ico">
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta name="keywords" content=""/>
+    <title>Movement - Motion - Google design guidelines</title>
+    <meta itemprop="name" content="Movement - Motion - Google design guidelines"/>
+    <meta itemprop="image" content="https://material-design.storage.googleapis.com/publish/material_v_4/social.png"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Movement - Motion - Google design guidelines" />
+    <meta property="og:image" content="https://material-design.storage.googleapis.com/publish/material_v_4/social.png" />
+    <meta property="og:site_name" content="Google design guidelines" />
+    <meta property="article:section" content="Movement - Motion" />
+<!--
+<PageMap>
+    <DataObject type="document">
+      <Attribute name="uid"></Attribute>
+      <Attribute name="title">Movement</Attribute>
+      <Attribute name="keywords"></Attribute>
+      <Attribute name="slug"></Attribute>
+      <Attribute name="description"></Attribute>
+      <Attribute name="section_title">Motion</Attribute>
+      <Attribute name="section_slug">motion</Attribute>
+    </DataObject>
+    <DataObject type="thumbnail">
+      <Attribute name="src" value="" />
+    </DataObject>
+</PageMap>
+-->
+  </head>
+
+  <body class="site-material_ext_publish section-motion noninitial-chapter color-purple qp-ui" data-qp-ui="{ 'Mask': {} }">
+        <!-- Google Tag Manager -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHRPF8"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NHRPF8');</script>
+      <!-- End Google Tag Manager -->
+        <header>
+  <div class="header-wrapper">
+    <div class="header-title">      <span class="section-title">Motion</span>
+      <span class="chapter-title"><span class="title-separator">–</span> Movement</span>
+        </div>
+  </div>
+
+</header>
+
+<nav>
+  <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
+</nav>
+
+<form id="search-form" action="/design/spec/search.html" method="GET">
+  <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
+    <button class="search-button"><i class="material-icons">search</i></button>
+    <button class="search-close-button"><i class="material-icons">close</i></button>
+    <input name="q" type="text" id="search-input" autocomplete="off">
+    <label for="search-input">Search</label>
+  </div>
+</form>
+
+
+
+
+<div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
+  <div class="side-nav-wrapper">
+    <span id="logo"><img src="../static/images/nav_google_logo.svg" alt="Logo"/></span>
+    <nav>
+      <dl>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">Motion
+                </dt>
+        <dd>
+                    <a class="" href="material-motion.html">Material motion
+                    </a>
+                    <a class="" href="duration-easing.html">持续时间和缓动
+                    </a>
+                    <a class="nav_selected" href="movement.html">元素的运动
+                    </a>
+                    <a class="" href="transforming-material.html">Material的变形
+                    </a>
+                    <a class="" href="choreography.html">动画的组织
+                    </a>
+                    <a class="" href="creative-customization.html">自定义创意动画
+                    </a>
+                  </dd>
+              </dl>
+    </nav>
+
+        <div class="legal">
+      <p class="copyright">Google &copy;</p>
+      <ul>
+                  <li>
+            <a href="javascript:void(0);" onclick="try{userfeedback.api.startFeedback({'productId': '1027542', 'bucket': 'material_spec', 'locale': 'en', 'allowNonLoggedInFeedback': true});return false;}catch(e){}" class="qp-ui-side-nav-dismiss">Site feedback</a>
+          </li>
+                <li>
+          <a href="../../../intl/en/policies/privacy/index.html">Privacy</a>
+        </li>
+        <li>
+          <a href="../../../intl/en/policies/terms/index.html">Terms</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div id="grid-cont">
+      <section class="grid_outer chapter">
+  <h1 class="chapter-title">Movement
+          </h1>
+    <div class="chapter-content">
+
+        <div class="chapter-intro">
+            <p>Material in motion abides by forces similar to those of the real world, like gravity. </p>
+
+
+
+    </div>
+
+        <nav class="chapter-toc">
+      <h1>Contents</h1>
+      <ul>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="movement.html#movement-movement-within-screen-bounds">Movement within screen bounds
+                </a></li>
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="movement.html#movement-movement-in-out-of-screen-bounds">Movement in and out of screen bounds
+                </a></li>
+              </ul>
+    </nav>
+
+    <div class="article-list">
+                        <div id="movement-movement-within-screen-bounds" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Movement within screen bounds
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+        <div class="module-body">
+      <p>The movement of an element between two points within the bounds of the screen follows a natural, concave arc. All on-screen movements use the  <a href="duration-easing.html#duration-easing-natural-easing-curves">standard curve</a>.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>Arc upward</h3>
+    <div class="module-body">
+    <p>Rising against gravity in the real world requires effort. Elements moving upward on the screen should similarly depict effort during acceleration through a slower upward movement.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01R1pOdFdNUm0yOFk" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01Y2RoRE1vcnNPYVk/ShiftWithin_01_Upward_Do_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01R1pOdFdNUm0yOFk/ShiftWithin_01_Upward_Do_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>When moving diagonally upward, begin with a shallow ascent and end with a steep ascent. </p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01bUdzZ0h0c2pVV2c" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01Ym5MR3U1czRuSEE/ShiftWithin_02_Upward_Dont_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01bUdzZ0h0c2pVV2c/ShiftWithin_02_Upward_Dont_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Reversing physics while moving upward ignores gravitational pull and appears unnatural.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>Arc downward</h3>
+    <div class="module-body">
+    <p>Falling objects in the real world are accelerated by gravity. Elements moving downward on screen should depict less effort through a faster downward movement.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01aEtyaEJxTWxYOFE" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01U3VENTRTMVdPbVU/ShiftWithin_03_Downward_Do_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01aEtyaEJxTWxYOFE/ShiftWithin_03_Downward_Do_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>When moving diagonally downward, descent should begin steeply and end shallowly.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01YzZTMWZ5dDZSV28" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01N2xHLVJaNEtWc0E/ShiftWithin_04_Downward_Dont_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01YzZTMWZ5dDZSV28/ShiftWithin_04_Downward_Dont_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Reversing physics while moving downward ignores the gravitational pull.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+      <h3>When not to arc</h3>
+    <div class="module-body">
+    <p>Objects moving along a single axis (either horizontally or vertically, but not both) do not follow an arc. These movements are simpler and may move at a slightly faster speed.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01MklRMTduTWRvT00" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01dWQyUkhJdVhlOVU/NoArc_01_SingleAxis_Do_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01MklRMTduTWRvT00/NoArc_01_SingleAxis_Do_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>Keep the path for single-axis movement straight.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01T2U4SnpZU0YtdnM" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01TmFKa2o5ZS0xYWc/NoArc_02_SingleAxis_Dont_v3.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01T2U4SnpZU0YtdnM/NoArc_02_SingleAxis_Dont_v3.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Don’t apply an unnatural arc to single-axis movement.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>Objects entering and exiting the screen also move along a single axis.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01N1dzQWhCek9Sb1E" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01b283UzdSX2czQ2M/NoArc_03_ShiftInOutArcDo_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01N1dzQWhCek9Sb1E/NoArc_03_ShiftInOutArcDo_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>Linear entrances are easy to follow with a clearly defined entry point.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01bDdNV2pxaDJYQ3c" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01VHZNa2JVcTZ1RjA/NoArc_04_ShiftInOutArcDont_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01bDdNV2pxaDJYQ3c/NoArc_04_ShiftInOutArcDont_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Don’t arc the path of an object if it is moving off-screen, as it complicates the entry point.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  <div id="movement-movement-in-out-of-screen-bounds" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
+  <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
+    Movement in and out of screen bounds
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
+      <title id="title">Expand and collapse content</title>
+      <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
+      <polygon role="presentation" points="2.5,4.167 5,6.667 7.5,4.167 6.917,3.583 5,5.5 3.083,3.583"/>
+    </svg>
+  </h2>
+    <div class="article-content">
+    <div class="module-list">
+                  <div>
+              <section class="moduleB1">
+          <h3>Independent movement</h3>
+        <div class="module-body">
+      <p>Objects entering and exiting the screen are referred to as independent objects as they don't affect the position of other on-screen content.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>Entering the screen</h4><p>Objects entering the screen use the <a href="duration-easing.html#duration-easing-natural-easing-curves">deceleration curve</a> for a speedy entrance, indicating that they had been travelling at peak velocity.</p><h4>Permanently leaving the screen</h4><p>Objects <strong>permanently</strong> leaving the screen use the <a href="duration-easing.html#duration-easing-natural-easing-curves">acceleration curve</a> to speed off-screen over a slightly shorter duration, as they will not be returning and require less user focus.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01V3c5cHRmbmlYYkE" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01a09wS2pHdkVUcGc/InOut_01_ShiftInOutDo_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01V3c5cHRmbmlYYkE/InOut_01_ShiftInOutDo_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>Apply the deceleration curve to items entering the screen that do not affect the position of any other objects around it. On mobile, this transition typically occurs over 225ms. Apply the acceleration curve to these same items when they permanently leave the screen. On mobile, this transition typically occurs over 195ms.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01WTg0VDIxYzJSdk0" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01eUtuc0RzblJZeTg/InOut_02_ShiftInOutDont_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01WTg0VDIxYzJSdk0/InOut_02_ShiftInOutDont_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Don’t use the standard curve for either these cases. For entrances, slow acceleration is unnecessary as focus should be on the final resting point. For exits, slow deceleration is unnecessary as the ending point isn’t visible.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <h4>Temporarily leaving the screen</h4><p>Objects <strong>temporarily</strong> leaving the screen should use the <a href="duration-easing.html#duration-easing-natural-easing-curves">sharp curve</a>, as they may return to the screen at any time and should appear nearby and within reach.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01alI4QmJZcVhoUE0" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01VzRiempLVndHQWM/InOut_03_ShiftOutTempDo_v4-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01alI4QmJZcVhoUE0/InOut_03_ShiftOutTempDo_v4-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Apply the sharp curve to items temporarily leaving the screen that may return from the same exit point. When they return, use the deceleration curve. On mobile, this transition typically occurs over 300ms.</p>
+        </figcaption>
+                </figure>
+            <figure class="">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01aWJxbzZwWl9FR2s" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01T3hETkkwTjRGV28/InOut_04_ShiftOutTempDont_v4-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01aWJxbzZwWl9FR2s/InOut_04_ShiftOutTempDont_v4-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <p>Apply the acceleration curve to items permanently leaving the screen, or if they are to return from a different location. If they return, use the deceleration curve.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              <div>
+              <section class="moduleB1">
+          <h3>Relative movement</h3>
+        <div class="module-body">
+      <p>Entering or exiting objects that move other on-screen elements do so along a smooth easing curve, so that they remain minimally disruptive and avoid eye-catching, dramatic movement.</p>
+    </div>
+  </section>
+
+        </div>
+              <div>
+          <section class="moduleD1">
+    <div class="module-body">
+    <p>The <a href="duration-easing.html#duration-easing-natural-easing-curves">standard curve</a> is used for moving objects both in and out of the bounds of the screen. This curve has a slightly longer duration compared to independent objects.</p>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class=" example do">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01Qm1pV0ZjWnZIQmc" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01U3RfQ3dTN3RROE0/InOut_05_ShiftInOutRelativeDo_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01Qm1pV0ZjWnZIQmc/InOut_05_ShiftInOutRelativeDo_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Do.</div><p>Since the on-screen floating action button’s movement is influenced by the entering card, the standard curve is applied to the movement of both objects to maintain a smooth start and stop. On mobile, this transition typically occurs over 300ms.</p>
+        </figcaption>
+                </figure>
+            <figure class=" example dont">
+                          <div class="media">
+                      <div class="qp-ui" data-qp-ui="{ 'VideoPlayer': {} }">
+              <video id="1-None_0B14F_FSUCc01RkhFaTRGN0J6UTg" crossorigin="anonymous" preload="metadata"  loop  controls>
+                              <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01NVR1akxla0pFa1k/InOut_06_ShiftInOutRelativeDont_v3-device.webm" type="video/webm" />
+                                            <source src="https://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B14F_FSUCc01RkhFaTRGN0J6UTg/InOut_06_ShiftInOutRelativeDont_v3-device.mp4" type="video/mp4" />
+                            </video>
+            </div>
+                    </div>
+                        <figcaption>
+          <div class="caption-title">Don't.</div><p>Using deceleration and acceleration curves for the upward and downward movement cause the on-screen floating action button to abruptly start moving upward and abruptly stop moving downward. This movement is harsh and disruptive.</p>
+        </figcaption>
+                </figure>
+          </div>
+  </div>
+</section>
+        </div>
+              </div>
+  </div>
+</div>                  </div>
+
+  </div>
+
+</section>    </div>
+
+    <footer>
+  <div class="footer-grid">
+    <div class="footer-L section-motion color-purple">&nbsp;</div>
+    <div class="footer-grid-L section-motion color-purple">
+            <a class="footer-text" href="duration-easing.html">
+        <i class="material-icons arrow-L">arrow_back</i>
+        <span class="direction">Previous</span>
+        <div>
+                      持续时间和缓动
+                  </div>
+      </a>
+          </div>
+
+    <div class="footer-R section-motion color-purple">&nbsp;</div>
+    <div class="footer-grid-R section-motion color-purple">
+            <a class="footer-text" href="transforming-material.html">
+        <i class="material-icons arrow-R">arrow_forward</i>
+        <span class="direction">Next</span>
+        <div>
+                      Material 的变形
+                  </div>
+      </a>
+          </div>
+
+  </div>
+</footer>
+    <script src="https://www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
+    <script src="../static/js/main.js"></script>
+              <script src="https://www.gstatic.com/feedback/api.js"></script>
+
+  </body>
+
+</html>
