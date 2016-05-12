@@ -52,7 +52,7 @@
         <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">Motion</span>
-      <span class="chapter-title"><span class="title-separator">–</span> Duration and easing</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 持续时间和缓动</span>
         </div>
   </div>
 
@@ -117,27 +117,27 @@
 
     <div id="grid-cont">
       <section class="grid_outer chapter">
-  <h1 class="chapter-title">Duration and easing
+  <h1 class="chapter-title">持续时间和缓动
           </h1>
     <div class="chapter-content">
 
         <div class="chapter-intro">
-            <p>Material in motion is responsive and natural. Use these easing curves and duration patterns to create smooth and consistent motion.</p>
+            <p>Material Design 中的动效是自然且响应的。在动画中按照这些设计模式去设置持续时间和缓动，能够打造流畅、一致的动画效果。</p>
 
 
 
     </div>
 
         <nav class="chapter-toc">
-      <h1>Contents</h1>
+      <h1>目录</h1>
       <ul>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-speed">Speed
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-speed">速度
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-dynamic-durations">Dynamic durations
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-dynamic-durations">动态的持续时间
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-common-durations">Common durations
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-common-durations">通用的持续时间
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-natural-easing-curves">Natural easing curves
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="duration-easing.html#duration-easing-natural-easing-curves">自然的缓动曲线
                 </a></li>
               </ul>
     </nav>
@@ -145,7 +145,7 @@
     <div class="article-list">
                         <div id="duration-easing-speed" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Speed
+    速度
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -157,7 +157,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>When elements move between positions or states, the movement should be fast enough that it doesn't cause waiting, but slow enough that the transition can be understood. Keep transitions short as users will see them frequently.</p>
+    <p>当元素在位置或状态之间变化时，整体的运动感应该是迅捷的、无需等待的，但也不宜过快，也要适度缓和，让用户能够理解转场效果。一些频繁出现的动画效果要保持简短明快。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -170,7 +170,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>Animate quickly so that the user doesn’t have to wait for the animation to finish.</p>
+          <div class="caption-title">Do.</div><p>迅速完成动画效果，用户无需去等待动画完成。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -182,7 +182,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Don’t animate slowly as it creates unnecessary lag.</p>
+          <div class="caption-title">Don't.</div><p>动画不宜过于缓慢，造成不必要的延迟感。</p>
         </figcaption>
                 </figure>
           </div>
@@ -193,7 +193,7 @@
   </div>
 </div>                  <div id="duration-easing-dynamic-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Dynamic durations
+    动态的持续时间
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -205,7 +205,7 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>Rather than using a single duration for all animations, adjust each duration to accommodate the distance travelled, an element's velocity, and surface changes.</p><p><a href="movement.html#movement-movement-in-out-of-screen-bounds">Objects leaving the screen</a> may have shorter durations, as they require less attention.</p>
+    <p>根据元素的位移距离、元素的速率、材质面(Surface)的不同等因素，适当的调整动画持续时间，而不是所有动画全部使用一样的持续时间。</p><p><a href="movement.html#movement-movement-in-out-of-screen-bounds">退场的对象</a> 应该动画时间更短，因为既然已经退场，就无需被用户高度关注。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -217,7 +217,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Use longer durations when objects need to travel large distances or have dramatic changes in surface area.</p>
+          <p>当对象需要长距离位移，或材质面(Surface)区域大幅改变时(可以理解成界面元素成块成块大面积变化)，动画的持续时间要长一些。</p>
         </figcaption>
               </figure>
           </div>
@@ -239,7 +239,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Use shorter durations when objects travel short distances or have minor changes in surface area, so that the movement doesn't appear too slow.</p>
+          <p>当对象需要短距离位移，或材质面(Surface)区域小幅改变时(可以理解成界面元素成块成块小幅度变化)，动画的持续时间可以适当短一些，这样动画显得不缓慢。</p>
         </figcaption>
               </figure>
           </div>
@@ -250,7 +250,7 @@
   </div>
 </div>                  <div id="duration-easing-common-durations" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Common durations
+    通用的持续时间
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -262,7 +262,7 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <h4>Mobile </h4><p>Transitions on mobile typically occur over 300ms, within this margin of variance: </p><ul><li>Large, complex, full-screen transitions may have longer durations, occurring over 375ms</li><li>Objects entering the screen occur over 225ms</li><li>Objects leaving the screen occur over 195ms</li></ul><p>Transitions that exceed 400ms may feel too slow.</p><h4>Larger screens</h4><p>Objects travelling longer distances on larger screens have higher peak velocities than those going shorter distances over the same time period. Larger screens should have longer durations so that movements aren't too fast. </p><h4>Tablets</h4><p>Durations on tablet should be about 30% longer than on mobile. For example, a 300ms mobile duration would increase to 390ms on tablet.</p><h4>Wearables</h4><p>Durations on wearables should be about 30% shorter than those on mobile. For example, a 300ms mobile duration would be 210ms on wearables.</p>
+    <h4>移动端 </h4><p>移动端的转场动画时间一般大于 300ms，当然有些情况下，可以酌情改变： </p><ul><li>全屏转场效果动画幅度大，运动组织复杂，需要更长的动画时间，至少需要 375ms 的持续时间</li><li>对象入场至少需要 225ms 的持续时间</li><li>对象退场至少需要 195ms 的持续时间</li></ul><p>而动转场画效果超过 400ms 会让人感到缓慢。</p><h4>大屏设备</h4><p>相同时间内，相对于小屏，对象在大屏上的位移距离更大，因此速率会更高。所以大屏上的动画需要更长的持续时间，以避免动画过快。 </p><h4>平板设备</h4><p>平板设备上动画的持续时间要比手机端设备的持续时间多 30%。例如，手机端 300ms 的动画，移动端要增加到 390ms</p><h4>可穿戴设备</h4><p>可穿戴设备上的动画要比手机端设备的持续时间少 30%。例如，手机端 300ms 的动画，可穿戴设备上要减少到 210ms。 </p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -275,7 +275,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Because material must move greater distances on larger devices, transitions may have slightly slower durations than on smaller devices.</p>
+          <p>因为在更大的屏幕上，Material 元素需要更长的位移距离，因此相对于小屏幕设备，大屏幕设备需要略长的持续时间来缓和动画。</p>
         </figcaption>
               </figure>
           </div>
@@ -285,7 +285,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <h4>Desktop</h4><p>Desktop animations should be faster and simpler than their mobile counterparts. These animations should last 150ms to 200ms.</p><p>Because desktop transitions may be less noticeable, they should be immediately responsive and faster than their mobile counterparts.</p><p>Complex web transitions often result in dropped frames (unless they are built for GPU acceleration). Shorter durations will make these less noticeable because the animation completes faster.</p>
+    <h4>桌面端</h4><p>和移动端动画相比，桌面端的转场动画需要更快更简约。动画时间应该在 150ms 和 200ms 之间。</p><p>因为桌面端的转场效果相对不需要那么明显，要比移动端效果更灵敏、更迅捷。</p><p>复杂的网页动画会导致丢帧(除非使用了 GPU 加速). 更短的持续时间让转场变的不那么显眼，减少动画对用户注意力的影响，因为动画会快速完成。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -298,7 +298,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Transitions appear much faster on desktop. </p>
+          <p>桌面端的转场显得更快一些。 </p>
         </figcaption>
               </figure>
           </div>
@@ -309,7 +309,7 @@
   </div>
 </div>                  <div id="duration-easing-natural-easing-curves" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Natural easing curves
+    自然的缓动曲线
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -321,7 +321,7 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>These natural easing curves affect an object’s speed, opacity, and scale.</p>
+      <p>这些自然的动画曲线可以调节对象的速度、不透明度和比例。</p>
     </div>
   </section>
 
@@ -329,7 +329,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>Acceleration and deceleration changes should be smooth across the duration of an animation so that movement doesn't appear mechanical.</p>
+    <p>在动画过程中，加速和减速的变化应该是平滑的，这样的动画才会不机械。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -349,7 +349,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>Motion appears more natural and delightful when acceleration and deceleration occur asymmetrically. </p>
+    <p>当动画的加速和减速不对称时，动画会显得更自然，更具有愉悦感。 </p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -368,18 +368,18 @@
         </div>
               <div>
               <section class="moduleB1">
-          <h3>Easing curves</h3>
+          <h3>缓动曲线</h3>
         <div class="module-body">
-      <p>Easing curves may be named differently depending on the platform or software used. These guidelines will refer to them as standard, deceleration, acceleration, and sharp curves.</p>
+      <p>在不同的平台和软件中，缓动曲线的命名各不相同。而这份规范文档将缓动曲线分为标准曲线，减速曲线，加速曲线和 Sharp曲线</p>
     </div>
   </section>
 
         </div>
               <div>
           <section class="moduleE1">
-      <h3>Standard curve</h3>
+      <h3>标准曲线</h3>
     <div class="module-body">
-    <p>This is the most common easing curve. Objects quickly accelerate and slowly decelerate between on-screen locations. It applies to growing and shrinking material, among other property changes.</p><p>See more in <a href="movement.html#movement-movement-within-screen-bounds">Movement within screen bounds</a>.</p>
+    <p>这是最为常见的缓动曲线。处于屏幕中的对象快速加速，缓慢减速。除了其他属性的改变，值得一提的是，这个曲线一般应用于材质面(Surface)的缩放。This is the most common easing curve. Objects quickly accelerate and slowly decelerate between on-screen locations. It applies to growing and shrinking material, among other property changes.</p><p>See more in <a href="movement.html#movement-movement-within-screen-bounds">Movement within screen bounds</a>.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
