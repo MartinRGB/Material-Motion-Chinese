@@ -117,25 +117,25 @@
 
     <div id="grid-cont">
       <section class="grid_outer chapter">
-  <h1 class="chapter-title">Transforming material
+  <h1 class="chapter-title">Maeterial 的变形
           </h1>
     <div class="chapter-content">
 
         <div class="chapter-intro">
-            <p>Material can make surfaces feel alive by multiplying and dividing them, and changing their shape and size.</p>
+            <p>Material Design 的动画设计通过对形状、尺寸的处理，让元素可以扩展收缩，从而使材质面(Surface)富有活力感和鲜活感。</p>
 
 
 
     </div>
 
         <nav class="chapter-toc">
-      <h1>Contents</h1>
+      <h1>目录</h1>
       <ul>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-rectangular-transformation">Rectangular transformation
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-rectangular-transformation">矩形变换
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-radial-transformation">Radial transformation
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-radial-transformation">径向变换
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-joining-dividing">Joining &amp; Dividing
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="transforming-material.html#transforming-material-joining-dividing">连接 &amp; 分离
                 </a></li>
               </ul>
     </nav>
@@ -143,7 +143,7 @@
     <div class="article-list">
                         <div id="transforming-material-rectangular-transformation" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Rectangular transformation
+    矩形变换
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -155,16 +155,16 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>When material changes shape and size, its width and height change asynchronously along a motion curve. These changes are <a href="choreography.html">choreographed</a> with nearby surfaces inside or around the changing element.</p><p>All surface transformations that occur on-screen, such as the ones below, use the <a href="duration-easing.html#duration-easing-natural-easing-curves">standard curve</a>. </p>
+      <p>当 Material 元素改变形状和尺寸时，它的宽度和高度根据动画曲线异步变化。通过<a href="choreography.html">动画的组织</a> 让其周围的材质面（Surface）和内部的材质面元素有序运动。</p><p>所有的材质变换都发生在屏幕内，例如下面这个动画，使用了<a href="duration-easing.html#duration-easing-natural-easing-curves">标准曲线</a>. </p>
     </div>
   </section>
 
         </div>
               <div>
           <section class="moduleE1">
-      <h3>Transforming width and height</h3>
+      <h3>宽度和高度的变化</h3>
     <div class="module-body">
-    <p>Elements may be expanded or collapsed using either asymmetric or symmetrical width and height changes.</p><p><strong>Asymmetric transformations</strong> involve the width and height changes at different rates. They work best when multiple elements or position changes are involved.</p>
+    <p>通过异步或同步改变元素的宽度和高度，可以实现收缩或扩张的效果。</p><p><strong>异步变换</strong> 让宽度和高度以不同步的运动方式变化。当动画元素较多，或者元素位移不是单纬时，可以考虑异步变换动画。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -177,7 +177,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Asymmetric transformation</div><p>To expand an object's size, begin transforming the width of an object slightly before transforming the height. To collapse an object's size, begin transforming the height slightly before the width. </p>
+          <div class="caption-title">异步变换</div><p>在扩展对象的尺寸时，我们可以观察到宽度的扩张要略微先于高度的扩张。在缩小对象的尺寸时，我们可以观察到高度的缩小要略微先于宽度的缩小。 </p>
         </figcaption>
               </figure>
           </div>
@@ -187,7 +187,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p><strong>Symmetrical transformations</strong> involve width and height changes occurring at the same rate. They are better for changes to a single element that occur along a single axis.</p>
+    <p><strong>同步变换</strong> 让宽度和高度以同样的运动方式变化。当动画元素单一，或者元素位移是单纬时，可以考虑同步变换动画。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -200,7 +200,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Symmetric transformation</div><p>Transforming width and height at the same time is a less detailed animation approach best suited to simple shape changes. These transformations can have slightly shorter durations than asymmetric ones.</p>
+          <div class="caption-title">同步变换</div><p>高度和宽度以同样的运动方式变化，这种观念动画缺乏细节，最好在处理简单的形状元素时使用。同步变换动画的整体持续时间可以稍微比异步变换动画的整体持续时间短一些。</p>
         </figcaption>
               </figure>
           </div>
@@ -210,7 +210,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>When an object expands asynchronously, the items it contains (such as text or images) change size at a constant aspect ratio to prevent unnatural stretching. For more information on how to transition content within a surface, see <a href="choreography.html">Choreography</a>.</p>
+    <p>当对象的扩张动画是异步变换时，对象所包含的物体（例如文本或图像）要以恒定的比例缩放，以免动画伸展生硬不自然。关于材质面(Surface)上信息内容动画的知识，可以参考<a href="choreography.html">动画的组织</a>.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -223,7 +223,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Content (such as a full-width image) transforms at a constant aspect ratio, even as its container (such as a larger card) transforms asynchronously along a motion curve.</p>
+          <p>即便容器（比如说这个卡片）是按照异步变换进行缩放动画的，信息内容 (比如全宽图像) 也要按照恒定比例进行变换。</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -235,7 +235,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Containers with full-bleed content (such as a full-bleed image) may expand synchronously.</p>
+          <p>当容器内内容是全出血布局时，容器可以采用同步变换动画。</p>
         </figcaption>
                 </figure>
           </div>
@@ -246,7 +246,7 @@
   </div>
 </div>                  <div id="transforming-material-radial-transformation" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Radial transformation
+    径向变换
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -258,7 +258,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>Radial transformations are symmetrical, circular visualizations that originate from a user’s point of touch. They are commonly used on circular surfaces that morph into other shapes.</p>
+    <p>径向变换是同步变换动画，要根据用户输入点的位置，实现圆形动画的变换。径向变换动画一般应用于圆形材质面(Surface)，将其变形为其他形状。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -271,7 +271,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>Radial transformation should be used on circular surfaces that morph into rectangular surfaces, or for creating new surfaces from the point of input.</p>
+          <div class="caption-title">Do.</div><p>圆形材质面(Surface)变换为矩形材质面(Surface)时，可以使用径向变换动画。也可以在用户输入点处创建新材质面(Surface)。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -283,7 +283,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Don’t use a radial transformation when transforming between two rectangular shapes.</p>
+          <div class="caption-title">Don't.</div><p>不要在矩形与矩形的变化动画中使用径向变换。</p>
         </figcaption>
                 </figure>
           </div>
@@ -306,7 +306,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Don’t expand an oval’s width and height asynchronously.</p>
+          <div class="caption-title">Don't.</div><p>不要异步变换圆的宽度和高度。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -318,7 +318,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Don’t transform complex shapes.</p>
+          <div class="caption-title">Don't.</div><p>不可应用于复杂形状的变换。</p>
         </figcaption>
                 </figure>
           </div>
@@ -328,7 +328,7 @@
               <div>
           <section class="moduleD1">
     <div class="module-body">
-    <p>Transformations can originate either from the object’s current location or from the center of the final surface being formed. </p>
+    <p>在使用径向变换动画时，要么根据对象当前的位置展开动画效果，要么根据变换后形状的中心点展开动画效果。 </p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -341,7 +341,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>During expansion, the floating action button moves in an arc towards its destination as it expands into a card.</p>
+          <p>在拓展过程中，FAB(Floating Action Button) 通过弧形位移轨迹移动到最终位置，与此同时通过径向变换扩展为卡片。</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -353,7 +353,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>The center of the floating action button stays in place during the transformation, creating a subtler expansion effect.</p>
+          <p>在材质面形状变化过程中，FAB(Floating Action Button) 的中心点不变化，这样的拓展效果更精致一些。</p>
         </figcaption>
                 </figure>
           </div>
@@ -364,7 +364,7 @@
   </div>
 </div>                  <div id="transforming-material-joining-dividing" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Joining &amp; Dividing
+    连接 &amp; 分离
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -376,7 +376,7 @@
                   <div>
           <section class="moduleD1">
     <div class="module-body">
-    <h4>Joining</h4><p>Material may join with other material, or it may divide into multiple pieces. As two pieces of material approach one other, their edges meet and margins overlap before the movement completes. </p><h4>Dividing</h4><p>When material divides into multiple pieces, the pieces begin separation at the start of the movement. </p><h4>Shadows</h4><p>Shadows from separated material do not appear above sibling elements.</p>
+    <h4>连接</h4><p>Material 元素可以通过连接加入其它 Material 元素中，同理，一个 Material 元素也可以分离成多个 Maeterial 元素。当两块 Material 元素靠近彼此时开始连接，在最终融合完成前，边缘会相接、覆盖。 may join with other material, or it may divide into multiple pieces. As two pieces of material approach one other, their edges meet and margins overlap before the movement completes. </p><h4>分离</h4><p>当 Maeterial 元素开始分离时，多个元素块同时开始分割动画。 </p><h4>阴影</h4><p>Material 元素块的阴影不会叠加到其它元素块上。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -389,7 +389,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Example of material joining and dividing</p>
+          <p>Material 元素连接与分离的案例</p>
         </figcaption>
                 </figure>
           </div>
@@ -410,7 +410,7 @@
     <div class="footer-grid-L section-motion color-purple">
             <a class="footer-text" href="movement.html">
         <i class="material-icons arrow-L">arrow_back</i>
-        <span class="direction">Previous</span>
+        <span class="direction">上一页</span>
         <div>
                       元素的运动
                   </div>
@@ -421,7 +421,7 @@
     <div class="footer-grid-R section-motion color-purple">
             <a class="footer-text" href="choreography.html">
         <i class="material-icons arrow-R">arrow_forward</i>
-        <span class="direction">Next</span>
+        <span class="direction">下一页</span>
         <div>
                       动画的组织
                   </div>
