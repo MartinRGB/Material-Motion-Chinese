@@ -52,7 +52,7 @@
         <header>
   <div class="header-wrapper">
     <div class="header-title">      <span class="section-title">Motion</span>
-      <span class="chapter-title"><span class="title-separator">–</span> Choreography</span>
+      <span class="chapter-title"><span class="title-separator">–</span> 动画的组织</span>
         </div>
   </div>
 
@@ -107,25 +107,25 @@
 
     <div id="grid-cont">
       <section class="grid_outer chapter">
-  <h1 class="chapter-title">Choreography
+  <h1 class="chapter-title">动画的组织
           </h1>
     <div class="chapter-content">
 
         <div class="chapter-intro">
-            <p>Material in motion guides the user’s focus through interactions by sharing elements across transitions.</p>
+            <p>Material Design 的动效设计能够通过元素的过渡动画，让用户的交互操作有所聚焦。</p>
 
 
 
     </div>
 
         <nav class="chapter-toc">
-      <h1>Contents</h1>
+      <h1>目录</h1>
       <ul>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-continuity">Continuity
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-continuity">连贯性
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-creation">Creation
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-creation">创建
                 </a></li>
-                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-radial-reaction">Radial reaction
+                <li><a class="gweb-smoothscroll-control qp-ui" data-qp-ui="{ 'SmoothScroll': {} }" href="choreography.html#choreography-radial-reaction">径向反馈
                 </a></li>
               </ul>
     </nav>
@@ -133,7 +133,7 @@
     <div class="article-list">
                         <div id="choreography-continuity" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Continuity
+    连贯性
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -145,16 +145,16 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>Maintain a clear focal point during transitions by carefully selecting the number and type of elements shared across the transitions.  </p>
+      <p>在动画过程中，要审慎的选择共享元素的数量和类型，来构建清晰的视觉焦点。 </p>
     </div>
   </section>
 
         </div>
               <div>
           <section class="moduleE1">
-      <h3>All content elements are shared</h3>
+      <h3>所有当前内容都为共享元素</h3>
     <div class="module-body">
-    <p>While a surface is expanding, a significant number of elements should remain visible during the transition. </p><p>Complex transitions should keep a single element visible (see below).</p>
+    <p>当材质面（Surface）扩张时，一些元素应该全程保持可见，应该将它们做为两种状态的共享元素。 </p><p>而复杂的动画效果应该保证某一重要元素全程清晰可见（见下）</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -176,9 +176,9 @@
         </div>
               <div>
           <section class="moduleE1">
-      <h3>Few or no content elements are shared</h3>
+      <h3>少数内容或没有内容做为共享元素</h3>
     <div class="module-body">
-    <p>While expanding a surface, if only a <strong>single element</strong> will be present after the transition, that element should be the focal point of the transition, controlling all other elements.</p>
+    <p>材质面（Surface）扩张时，如果仅仅有 <strong>单一元素</strong> 在转场完成后保留，那么这个元素应该成为动画的视觉焦点，以这个元素为依据，统一控制其它元素。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -191,7 +191,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Anchoring non-shared content to a single shared element’s movement.</p>
+          <p>在单一共享元素的动画中，利用锚点移动，将共享元素打造为视觉焦点。</p>
         </figcaption>
               </figure>
           </div>
@@ -201,7 +201,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>If there are <strong>no shared elements</strong> between views, anchor all crossfading elements to the surface’s vertical movement. The surface crops the content within.</p>
+    <p>如果视图之间 <strong>没有共享元素</strong>,将所有淡入淡出的元素的Y轴运动和材质面的Y轴运动关联。材质面包含并裁剪内容。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -214,7 +214,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Anchoring all non-shared content to the vertical movement of the surface expansion.</p>
+          <p>将所有非共享元素的 Y 轴运动和材质面(Surface)高度扩展的运动关联。</p>
         </figcaption>
               </figure>
           </div>
@@ -223,9 +223,9 @@
         </div>
               <div>
           <section class="moduleE1">
-      <h3>No shared surfaces (Not recommended)</h3>
+      <h3>没有共享材质面(不推荐)</h3>
     <div class="module-body">
-    <p>If there are <strong>no common surfaces</strong> shared across the transition, a new surface enters the screen from another location, creating a new focal point.</p>
+    <p>可以接受没有共享元素，然而不推荐没有共享材质面(Surface)，如果 <strong>没有共享材质面</strong> 来完成动画过渡效果，那么新的材质面要从屏幕外入场，以便构建新的视觉焦点。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -235,9 +235,9 @@
         </div>
               <div>
           <section class="moduleD1">
-      <h3>Multiple shared elements</h3>
+      <h3>多个共享元素</h3>
     <div class="module-body">
-    <p>When <strong>multiple elements</strong> remain visible during a transition, only the most important ones should be included. Some elements may disappear during the transition but reappear once the transition completes, if they are too distracting during the transition itself.</p>
+    <p>当动画前后保留有 <strong>多个共享元素</strong> 时，要让最重要的共享元素始终可见。如果重要等级较低的共享元素动画较为复杂混乱，可以考虑让它们在动画过程中消失，然后在动画结束后出现。 </p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -250,7 +250,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>Guide the user’s focus to the next view using the most important shared element.</p>
+          <div class="caption-title">Do.</div><p>用最重要的共享元素引导用户的视觉焦点至下一个视图。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -262,7 +262,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Avoid creating scenes without focus, such as by using many shared elements or by letting objects cross paths during the transition. </p>
+          <div class="caption-title">Don't.</div><p>要避免毫无焦点的动画，例如动画过程中展示过多的共享元素，或让共享元素的位移路径交叉，这都是错误的动画做法。</p>
         </figcaption>
                 </figure>
           </div>
@@ -271,9 +271,9 @@
         </div>
               <div>
           <section class="moduleD1">
-      <h3>Layout awareness</h3>
+      <h3>布局感知性</h3>
     <div class="module-body">
-    <p>When any element doesn't completely load by the time a transition completes, allow sufficient space in the location where the element will appear. This prevents jarring layout shifts when the elements finally appear, and avoids user frustration when a touch target suddenly jumps away.</p>
+    <p>当动画完成后，元素没有完全加载时，在元素加载处要保留有足够的空间，以便元素加载完成后出现。这种处理避免了当新元素出现时布局改变。而且，避免了用户在此时操作出现的界面元素突然偏移的现象。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -286,7 +286,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>Make room for the unloaded elements during the transition and gracefully display them in place once they fully load.</p>
+          <div class="caption-title">Do.</div><p>在动画过程中，为未加载完成的元素腾出空间，然后在读取完成时优雅的展示。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -298,7 +298,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Don’t shift the layout as elements load into view, as this distracts and causes a shift in focus.</p>
+          <div class="caption-title">Don't.</div><p>当元素读取完成，进入视图时，不要让布局产生大幅偏移，这会让用户改变注意焦点，从而分心。</p>
         </figcaption>
                 </figure>
           </div>
@@ -309,7 +309,7 @@
   </div>
 </div>                  <div id="choreography-creation" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Creation
+    创建
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -321,7 +321,7 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>New material surfaces, and their content, may be created from nothing.</p>
+      <p>创建新的 Material 材质面（Surface），创建新的内容，或者凭空创建元素。</p>
     </div>
   </section>
 
@@ -330,7 +330,7 @@
           <section class="moduleD1">
       <h3>Creating new surfaces</h3>
     <div class="module-body">
-    <p>Associate newly created surfaces to the element or action that creates them. New surfaces usually emerge from radial or rectangular expansions from the point of touch.</p>
+    <p>要在 操作响应处 或 代表创建含义的视觉元素处 创建新的材质面(Surface)。新的材质面(Surface)一般通过径向或矩形拓展从点击处出现。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -343,7 +343,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>This menu appears from the touch point, tying the element to the point of touch.</p>
+          <div class="caption-title">Do.</div><p>菜单从触控点处出现，将元素和触控点联系起来。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -355,7 +355,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>This menu appears far away from the touch point that triggered it, which breaks its relationship with the input method.</p>
+          <div class="caption-title">Don't.</div><p>菜单从触控点的远方出现，破坏了输入与创建元素之间的联系性。</p>
         </figcaption>
                 </figure>
           </div>
@@ -364,9 +364,9 @@
         </div>
               <div>
           <section class="moduleD1">
-      <h3>Choreographing surfaces</h3>
+      <h3>组织有序的材质面(Surface)动画</h3>
     <div class="module-body">
-    <p>When multiple new surfaces are created at the same time, quickly stagger the appearance of each. Create a clear, smooth focal path in a single direction.</p>
+    <p>当多个材质面同时被创建，整体的运动要参差有序。构建清晰、流畅、动画路径焦点明确、线性方向的动画。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -379,7 +379,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>List items have a slightly staggered entrance. Grid items populate left to right, and top to bottom.</p>
+          <div class="caption-title">Do.</div><p>列表项动画的入场感非常富有层次。栅格项从左往右，从上往下依次执行动画。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -391,7 +391,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Items shouldn’t appear within the list all at once. It’s overwhelming and eliminates a clear focus.</p>
+          <div class="caption-title">Don't.</div><p>元素不应该全部一起出现。这种动画给人负担过重，无法构建清晰的视觉焦点。</p>
         </figcaption>
                 </figure>
           </div>
@@ -414,7 +414,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Items that have a slightly staggered entrance shouldn’t appear in an order that’s confusing to follow.</p>
+          <div class="caption-title">Don't.</div><p>元素的出现顺序应该有规律、有层次，否则用户会感到混淆，难以跟上动画。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -426,7 +426,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Do not wait for each item to fully animate before introducing the next item. Begin each item’s staggered entrance no more than 20ms apart.</p>
+          <div class="caption-title">Don't.</div><p>不要等其它元素的动画执行完成后，才开始当前元素的动画。每个元素之间动画执行的延迟不应该超过20ms。</p>
         </figcaption>
                 </figure>
           </div>
@@ -435,9 +435,9 @@
         </div>
               <div>
           <section class="moduleD1">
-      <h3>Autonomous surface creation</h3>
+      <h3>材质面(Surface)的自动创建</h3>
     <div class="module-body">
-    <p>Surfaces created without user input, or without a point of origin, should do so using an elegant combination of fading, position, and scaling transformations.</p>
+    <p>有些情况下，无需用户输入，也没有明确的起始点，材质面就自动出现。这时应该利用运动感，合理结合渐入渐出，位移，缩放等变换，构建优雅的出场动画。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -450,7 +450,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Do.</div><p>An automatically triggered surface appears smoothly and quickly.</p>
+          <div class="caption-title">Do.</div><p>自动触发出现的材质面(Surface)动画，这个动画流畅迅捷。</p>
         </figcaption>
                 </figure>
             <figure class=" example dont">
@@ -462,7 +462,7 @@
             </div>
                     </div>
                         <figcaption>
-          <div class="caption-title">Don't.</div><p>Too much animation during surface creation is distracting.</p>
+          <div class="caption-title">Don't.</div><p>材质(Surface)面出现的动画显得非常繁琐，让用户感到分心。</p>
         </figcaption>
                 </figure>
           </div>
@@ -473,7 +473,7 @@
   </div>
 </div>                  <div id="choreography-radial-reaction" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Radial reaction
+    径向反馈
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -485,16 +485,16 @@
                   <div>
               <section class="moduleB1">
         <div class="module-body">
-      <p>Clarify the connection between user input and surface reactions using radial action.</p>
+      <p>利用径向反馈动画，让用户输入和材质面(Surface)的反馈无缝结合。</p>
     </div>
   </section>
 
         </div>
               <div>
           <section class="moduleD1">
-      <h3>User input</h3>
+      <h3>用户输入</h3>
     <div class="module-body">
-    <p>Connect user input to screen reactions by using touch ripples to both indicate the point of touch, and to confirm that touch input was received. For touch or mouse, this occurs at the point of contact.</p><p>Screen reactions occurring near the point of touch should occur sooner than reactions further away.</p>
+    <p>通过使用触控涟漪效果，来提示用户操作的触控点，可以让用户输入和屏幕反馈无缝结合，也能让用户知晓操作有效。这个效果出现在鼠标点击或手指触控的位置上。</p><p>触控点中心位置的反馈要比触控点远处位置的反馈快。</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -507,7 +507,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Use touch ripples to connect screen reactions to the point of touch. </p>
+          <p>使用触控涟漪效果，明确触控与屏幕反馈间关系。</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -519,7 +519,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Starting from the point of touch, the app bar changes color with the new color rippling outwards.</p>
+          <p>从顶部触点的位置向外开始动画，涟漪式扩散出新的颜色。</p>
         </figcaption>
                 </figure>
           </div>
@@ -542,7 +542,7 @@
             </div>
                     </div>
                         <figcaption>
-          <p>Images in this grid fade out based on the radial reaction around the tap point.</p>
+          <p>依据触控点的位置径向反馈出网格中图像的淡出动画。</p>
         </figcaption>
               </figure>
           </div>
