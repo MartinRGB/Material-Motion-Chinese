@@ -379,7 +379,7 @@
           <section class="moduleE1">
       <h3>标准曲线</h3>
     <div class="module-body">
-    <p>这是最为常见的缓动曲线。处于屏幕中的对象快速加速，缓慢减速。除了其他属性的改变，值得一提的是，这个曲线一般应用于材质面(Surface)的缩放。This is the most common easing curve. Objects quickly accelerate and slowly decelerate between on-screen locations. It applies to growing and shrinking material, among other property changes.</p><p>See more in <a href="movement.html#movement-movement-within-screen-bounds">Movement within screen bounds</a>.</p>
+    <p>这是最为常见的缓动曲线。处于屏幕中的对象快速加速，缓慢减速。除了应用到其他属性的改变上，值得一提的是，这个曲线一般应用于材质面(Surface)的缩放动画。</p><p>更多可见 <a href="movement.html#movement-movement-within-screen-bounds">屏幕范围内的运动</a>.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -406,7 +406,7 @@
             <figure class="">
                           <div class="module-body data-table">
             <div class="table-box">
-              <table class="c29"><tbody><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>FastOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>[[CAMediaTimingFunction alloc] initWithControlPoints:0.4f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>cubic-bezier(0.4, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 40%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
+              <table class="c29"><tbody><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>平台</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>协议</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>FastOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>[[CAMediaTimingFunction alloc] initWithControlPoints:0.4f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>cubic-bezier(0.4, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c20" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c12" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 40%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
             </div>
           </div>
                       </figure>
@@ -416,9 +416,9 @@
         </div>
               <div>
           <section class="moduleE1">
-      <h3>Deceleration curve (“Easing out”)</h3>
+      <h3>减速曲线 (“Easing out”)</h3>
     <div class="module-body">
-    <p>Objects enter the screen at full velocity from off-screen and slowly decelerate to a resting point. </p><p>During deceleration, objects may scale up either in size (to 100%) or opacity (to 100%). In some cases, when objects enter the screen at 0% opacity, they may slightly shrink from a larger size upon entry.</p><p>See more in <a href="movement.html#movement-movement-in-out-of-screen-bounds">Movement in and out of screen bounds</a>.</p>
+    <p>对象从屏幕外向屏幕内运动，在入场时速率达到最大，然后缓慢减速到指定位置。 </p><p>在减速过程中，对象可能会扩大尺寸（到100%），或增大不透明度（到100%）。但在一些案例中，对象入场时不透明度为 0%，而比例会轻微的从大尺寸收缩到 100% 尺寸。</p><p>更多可见 <a href="movement.html#movement-movement-in-out-of-screen-bounds">屏幕范围周围的入场和退场 </a>.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -445,7 +445,7 @@
             <figure class="">
                           <div class="module-body data-table">
             <div class="table-box">
-              <table class="c29"><tbody><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>Platform</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>Protocol</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>LinearOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span> [[CAMediaTimingFunction alloc] initWithControlPoints:0.0f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>cubic-bezier(0.0, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 0%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
+              <table class="c29"><tbody><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>平台</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>协议</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>Android</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>LinearOutSlowInInterpolator</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>iOS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span> [[CAMediaTimingFunction alloc] initWithControlPoints:0.0f:0.0f:0.2f:1.0f]</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>CSS</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>cubic-bezier(0.0, 0.0, 0.2, 1);</span></p></td></tr><tr class="c4"><td class="c24" colspan="1" rowspan="1"><p><span>After Effects</span></p></td><td class="c15" colspan="1" rowspan="1"><p><span>Outgoing Velocity: 0%<br/>Incoming Velocity: 80%</span></p></td></tr></tbody></table>
             </div>
           </div>
                       </figure>
